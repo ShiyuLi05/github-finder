@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body {
+  background-color: #1a1c24;
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
