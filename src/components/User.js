@@ -65,21 +65,26 @@ function User() {
             <Link
               to={userGitHubURL}
             >
-            GO TO GITHUB</Link>
+            GO TO GITHUB
+            </Link>
           </button>
         </div>
         </div>
 
-        <div className='grid'>
+        <div className='grid2'>
         <h2>My repostitories</h2>
-        <section className='repos-grid'>
+        <section className='repos'>
           {reposArray.map(repo => (
-            <div key={repo.id} className='repo-div'>
+            <div key={repo.id} className='repo'>
               <div>
-                <a href={repo.html_url}>{repo.name}</a>
-                <p>{repo.description}</p>
-              </div>
-              <p>Updated at {(repo.updated_at) = moment().format("MMM DD, HH:mm")}</p>
+                <span><Link
+                to={repo.html_url}
+                >
+                {repo.name}
+                </Link></span>
+                <span className='time'>Updated at {(repo.updated_at) = moment().format("MMM DD, YYYY")}</span>
+                
+              </div><p>{repo.description}</p>
             </div>
           ))}
         </section>
