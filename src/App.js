@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Search />} />
+        <Route exact path="/github-finder" element={<Search />} />
         <Route exact path="/user/:username" element={<User />} />
       </Routes>
     </BrowserRouter>
