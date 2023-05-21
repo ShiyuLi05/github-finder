@@ -82,7 +82,7 @@ function User() {
                 >
                 {repo.name}
                 </Link></span>
-                <span className='time'>Updated at {(repo.updated_at) = moment().format("MMM DD, YYYY")}</span>
+                <span className='time'>Updated at {moment(repo.updated_at).format("MMM DD, YYYY")}</span>
                 
               </div><p>{repo.description}</p>
             </div>
